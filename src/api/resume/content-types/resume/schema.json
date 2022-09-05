@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "resumes",
+  "info": {
+    "singularName": "resume",
+    "pluralName": "resumes",
+    "displayName": "Resume",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Education",
+        "Experience",
+        "Awards"
+      ],
+      "required": true
+    },
+    "duration": {
+      "type": "string",
+      "required": true
+    },
+    "schoolCollegeUniversity": {
+      "type": "string",
+      "required": true
+    },
+    "skillDegreeCertificate": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
